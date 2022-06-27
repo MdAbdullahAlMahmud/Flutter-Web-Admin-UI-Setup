@@ -25,12 +25,34 @@ class MenuController extends GetxController {
     switch (itemName) {
       case overviewPageDisplayName:
         return _customIcon(Icons.trending_up, itemName);
+
+      case salePageDisplayName:
+        return _customIcon(Icons.sell_outlined, itemName);
+
+      case purchasePageDisplayName:
+        return _customIcon(Icons.shopping_cart, itemName);
+
+      case receiveAndRePageDisplayName:
+        return _customIcon(Icons.account_tree_outlined, itemName);
+
+      case expensePageDisplayName:
+        return _customIcon(Icons.account_balance_wallet_outlined, itemName);
+
+      case paymentsPageDisplayName:
+        return _customIcon(Icons.credit_card, itemName);
+
+      case clientsPageDisplayName:
+        return _customIcon(Icons.account_tree_rounded, itemName);
+
+      case supplierPageDisplayName:
+        return _customIcon(Icons.account_tree_outlined, itemName);
+
       case driversPageDisplayName:
         return _customIcon(Icons.drive_eta, itemName);
-      case clientsPageDisplayName:
-        return _customIcon(Icons.people_alt_outlined, itemName);
+
       case authenticationPageDisplayName:
         return _customIcon(Icons.exit_to_app, itemName);
+
       default:
         return _customIcon(Icons.exit_to_app, itemName);
     }
